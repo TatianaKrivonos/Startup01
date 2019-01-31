@@ -1,0 +1,26 @@
+.page-header {
+  position: absolute;
+  margin-top: 40px;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      padding: 0;
+      width: 760px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1140px;
+    }
+  }
+
+  &__logo {
+    display: inline-flex;
+  }
+}

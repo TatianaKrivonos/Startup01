@@ -1,0 +1,64 @@
+.promo {
+  height: 100vh;
+  background-color: $main-color;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/Promo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    margin: 0 auto;
+    padding: 170px 20px 0;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      padding: 250px 0 0;
+      width: 760px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 315px 0 0;
+      width: 1140px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $first-font-family;
+    font-size: 36px;
+    color: #fff;
+
+    @media (min-width: $screen-md) {
+      font-size: 48px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: $second-font-family;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__link {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 30px;
+    width: 180px;
+    text-align: center;
+    font-family: $first-font-family;
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: #fff;
+      color: $main-color;
+    }
+  }
+}

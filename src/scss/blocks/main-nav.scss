@@ -1,0 +1,46 @@
+.main-nav {
+
+  &__list {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+    }
+
+    &--open {
+      position: absolute;
+      right: 0;
+      top: -40px;
+      display: block;
+      padding-top: 40px;
+      width: 140px;
+      background-color: rgba(192, 48, 28, 0.7);
+
+      & .main-nav__item {
+        padding-left: 10px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__item {
+    margin-right: 33px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-family: $first-font-family;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  &__icon {
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+}
