@@ -1,0 +1,26 @@
+.section {
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: $first-font-family;
+    color: $second-color;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:after {
+      display: block;
+      margin: 30px auto 0;
+      content: '';
+      width: 50px;
+      height: 2px;
+      background-color: $second-color;
+    }
+  }
+
+  &__descr {
+    text-align: center;
+    font-family: $second-font-family;
+    color: $second-color;
+  }
+}

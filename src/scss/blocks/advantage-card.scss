@@ -1,0 +1,46 @@
+.advantage-card {
+  margin: 0 auto 50px;
+  width: 280px;
+
+  @media (min-width: $screen-md) {
+    max-width: 350px;
+    min-width: 350px;
+    margin: 0 30px 50px 0;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin: 0;
+  }
+
+  &__img {
+    display: flex;
+    margin: 0 auto 30px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid $gray-light;
+
+    &--red {
+      background-color: $main-color;
+    }
+
+    svg {
+      margin: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-family: $first-font-family;
+    text-transform: uppercase;
+    text-align: center;
+    color: $second-color;
+  }
+
+  &__text {
+    font-family: $second-font-family;
+    font-size: 14px;
+    text-align: center;
+    color: $second-color;
+  }
+}
