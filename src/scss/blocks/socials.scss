@@ -1,0 +1,22 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  &__img {
+    display: flex;
+    margin-right: 14px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    svg {
+      margin: auto;
+    }
+  }
+}

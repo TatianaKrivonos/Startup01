@@ -1,0 +1,20 @@
+.page-footer {
+  padding: 100px 0;
+  background-color: $main-color;
+
+  &__copyright {
+    text-align: center;
+    font-family: $second-font-family;
+    font-size: 12px;
+    color: #fff;
+
+    &:before {
+      display: block;
+      margin: 0 auto 30px;
+      content: '';
+      width: 50px;
+      height: 2px;
+      background-color: #fff;
+    }
+  }
+}
