@@ -1,0 +1,16 @@
+.btn {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  width: 180px;
+  text-align: center;
+  font-family: $first-font-family;
+  color: #fff;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #fff;
+    color: $main-color;
+  }
+}
