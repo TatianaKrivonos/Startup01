@@ -1,0 +1,32 @@
+.banner {
+  padding: 100px 20px;
+  background-color: $main-color;
+  background-image: linear-gradient(rgba(192, 48, 28, 0.5), rgba(192, 48, 28, 0.5)), url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @media (min-width: $screen-md) {
+    padding: 100px 0;
+  }
+
+  p {
+    text-align: center;
+    font-family: $second-font-family;
+    font-size: 30px;
+    line-height: 44px;
+    color: #fff;
+
+    &:nth-child(2) {
+      margin-bottom: 40px;
+    }
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  &__link {
+    padding: 15px 25px;
+  }
+}
