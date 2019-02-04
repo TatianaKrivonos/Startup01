@@ -1,0 +1,40 @@
+.works {
+  padding: 100px 0;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      padding: 0;
+      width: 760px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1140px;
+    }
+  }
+
+  &__gallery {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 0 -15px;
+      justify-content: flex-start;
+    }
+  }
+
+  &__col {
+    padding-bottom: 30px;
+
+    @media (min-width: $screen-lg) {
+      padding: 0 15px 30px;
+    }
+  }
+}

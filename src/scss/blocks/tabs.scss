@@ -1,0 +1,22 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+
+  &__item {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-family: $second-font-family;
+    color: $second-color;
+
+    &--active {
+      color: $main-color;
+    }
+  }
+}
