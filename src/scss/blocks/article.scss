@@ -1,0 +1,43 @@
+.article {
+  display: flex;
+  margin-bottom: 77px;
+
+  &__img {
+    margin-right: 30px;
+
+    @media (min-width: $screen-lg) {
+      min-width: 460px;
+      min-height: 324px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    margin-bottom: 20px;
+
+    time {
+      display: block;
+      margin-right: 25px;
+      padding: 15px 15px;
+      width: 75px;
+      height: 75px;
+      text-align: center;
+      font-family: $first-font-family;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 20px;
+      color: $gray;
+      border: 2px solid $second-color;
+
+      span {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &:hover p span,
+  &:hover &__link {
+    color: $main-color;
+  }
+}
