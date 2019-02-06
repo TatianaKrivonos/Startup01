@@ -1,0 +1,45 @@
+.about {
+  padding: 100px 0;
+  background-color: $gray-lightest;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      padding: 0;
+      width: 760px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 0;
+      width: 1140px;
+    }
+  }
+
+  &__text-row {
+    margin-bottom: 70px;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      margin: 0 -15px 70px;
+    }
+  }
+
+  &__col {
+    margin-bottom: 40px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+      padding: 0 15px;
+    }
+
+    p {
+      font-family: $second-font-family;
+      font-size: 14px;
+      line-height: 24px;
+      color: $second-color;
+    }
+  }
+}
