@@ -1,0 +1,49 @@
+.clients {
+  padding: 67px 0 80px 0;
+  background-color: $gray-lightest;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      padding: 0;
+      width: 760px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 0;
+      width: 920px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  &__review {
+    padding: 0 40px;
+
+    blockquote {
+      text-align: center;
+      font-family: $second-font-family;
+      color: $second-color;
+
+      p {
+        margin-bottom: 35px;
+        line-height: 30px;
+        font-size: 18px;
+        font-style: italic;
+      }
+
+      cite {
+        font-size: 20px;
+        font-style: normal;
+      }
+    }
+  }
+}
