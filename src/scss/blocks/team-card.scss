@@ -1,0 +1,34 @@
+.team-card {
+  position: relative;
+
+  &__hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 263px;
+    height: 250px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__socials {
+    margin-top: 190px;
+  }
+
+  &__socials-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+    &:hover {
+      background-color: $main-color;
+    }
+  }
+
+  &:hover &__hover {
+    display: block;
+  }
+}
