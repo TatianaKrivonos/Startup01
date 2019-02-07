@@ -1,0 +1,66 @@
+.contacts {
+  padding: 100px 0;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      padding: 0;
+      width: 760px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 0;
+      width: 1140px;
+    }
+  }
+
+  &__row {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__form {
+
+    @media (min-width: $screen-md) {
+      width: 540px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 730px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      resize: none;
+    }
+  }
+
+  &__text-input {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    input {
+      width: 100%;
+      height: 45px;
+
+      @media (min-width: $screen-md) {
+        width: 250px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 350px;
+      }
+    }
+  }
+}
