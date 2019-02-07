@@ -25,6 +25,57 @@
     }
   }
 
+  &__data {
+    margin-bottom: 30px;
+    color: $second-color;
+
+    p {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      font-family: $second-font-family;
+      font-size: 12px;
+    }
+  }
+
+  &__data-title {
+    display: flex;
+    margin-bottom: 10px;
+    font-family: $first-font-family;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &:before {
+      display: block;
+      content: '';
+      margin-right: 10px;
+      width: 15px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    &--address {
+
+      &:before {
+        background-image: url(../img/fa-map-marker.svg);
+      }
+    }
+
+    &--hotline {
+
+      &:before {
+        background-image: url(../img/fa-mobile-phone.svg);
+      }
+    }
+
+    &--email {
+
+      &:before {
+        background-image: url(../img/fa-envelope-o.svg);
+      }
+    }
+  }
+
   &__form {
 
     @media (min-width: $screen-md) {
@@ -35,10 +86,45 @@
       width: 730px;
     }
 
+    textarea[placeholder],
+    input[placeholder] {
+      padding-left: 20px;
+      font-family: $second-font-family;
+      font-size: 12px;
+      color: $second-color;
+      text-transform: uppercase;
+    }
+
+    textarea[placeholder] {
+      padding-top: 20px;
+    }
+
+    textarea,
+    input {
+      border: 1px solid $gray;
+      color: $second-color;
+
+      &:focus {
+        border: 1px solid $main-color;
+      }
+    }
+
     textarea {
+      margin-bottom: 20px;
       width: 100%;
       height: 100px;
       resize: none;
+    }
+
+    p {
+      display: inline-block;
+      font-family: $second-font-family;
+      font-size: 12px;
+      color: $second-color;
+
+      span {
+        color: $main-color;
+      }
     }
   }
 
@@ -51,6 +137,7 @@
     }
 
     input {
+      margin-bottom: 20px;
       width: 100%;
       height: 45px;
 
@@ -61,6 +148,20 @@
       @media (min-width: $screen-lg) {
         width: 350px;
       }
+    }
+  }
+
+  &__btn {
+    padding: 15px 0;
+    margin-right: 35px;
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: transparent;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+      width: 170px;
     }
   }
 }
