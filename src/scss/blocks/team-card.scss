@@ -2,6 +2,7 @@
   position: relative;
   text-align: center;
   color: $second-color;
+  width: 240px;
 
   &__hover {
     display: none;
@@ -12,6 +13,16 @@
     height: 250px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
+
+    @media (min-width: $screen-md) {
+      width: 254px;
+      height: 241.44px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 263px;
+      height: 250px;
+    }
   }
 
   &__socials {
