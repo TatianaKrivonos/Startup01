@@ -1,8 +1,13 @@
 .team-card {
+  padding: 0 11px;
   position: relative;
   text-align: center;
   color: $second-color;
-  width: 240px;
+
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
 
   &__hover {
     display: none;
@@ -12,7 +17,7 @@
     width: 263px;
     height: 250px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 
     @media (min-width: $screen-md) {
       width: 254px;
