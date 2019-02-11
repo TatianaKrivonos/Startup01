@@ -1,0 +1,31 @@
+.slick-arrow {
+  position: absolute;
+  top: 106.5px;
+  bottom: 0;
+  z-index: 1;
+  padding: 0;
+  border: 0;
+  width: 35px;
+  height: 37px;
+  font: 0/0 a;
+  color: transparent;
+  background-color: $main-color;
+  background-image: url(../img/fa-angle-left.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slick-prev {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-disabled {
+  background-color: $gray-lighter;
+  pointer-events: none;
+}
+
