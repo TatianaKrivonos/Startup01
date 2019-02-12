@@ -20,9 +20,25 @@
 
   &__row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 70px;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (min-width: $screen-md) {
+      justify-content: space-between;
+    }
+  }
+
+  &__img {
+    margin-right: 30px;
+
+    @media (min-width: $screen-md) {
+      margin-right: 0;
+    }
   }
 
   &__review {
