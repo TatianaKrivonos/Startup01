@@ -153,7 +153,6 @@
 
   &__btn {
     padding: 15px 0;
-    margin-right: 35px;
     margin-bottom: 30px;
     width: 100%;
     background-color: transparent;
@@ -161,6 +160,7 @@
     text-transform: uppercase;
 
     @media (min-width: $screen-md) {
+      margin-right: 35px;
       margin-bottom: 0;
       width: 170px;
     }
