@@ -64,7 +64,10 @@
   }
 
   &__header-wrap {
-    padding: 10px 0;
+
+    @media (min-width: $screen-md) {
+      padding: 10px 0;
+    }
   }
 
   &__text {
