@@ -11,16 +11,20 @@
     border-radius: 50%;
     border: 2px solid #fff;
 
-    &:hover {
-      background-color: #fff;
-    }
-
     &:last-child {
       margin-right: 0;
     }
 
+    &:hover {
+      background-color: #fff;
+    }
+
+    &:hover use {
+      fill: $main-color;
+    }
+
     svg {
-      z-index: 200;
+      fill: #fff;
       margin: auto;
     }
   }
