@@ -22,6 +22,10 @@
 
 .slick-next {
   right: 0;
+
+  @media (min-width: $screen-md) {
+    right: -2px;
+  }
 }
 
 .slick-disabled {

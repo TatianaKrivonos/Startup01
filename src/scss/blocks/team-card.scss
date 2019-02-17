@@ -22,8 +22,8 @@
     background-color: rgba(0, 0, 0, 0.3);
 
     @media (min-width: $screen-md) {
-      width: 254px;
-      height: 241.44px;
+      width: 234px;
+      height: 222.42px;
     }
 
     @media (min-width: $screen-lg) {
@@ -46,6 +46,10 @@
     &:hover {
       background-color: $main-color;
     }
+
+    svg {
+      fill: #fff;
+    }
   }
 
   &:hover &__hover {
@@ -53,6 +57,7 @@
   }
 
   h3 {
+    margin-top: 20px;
     margin-bottom: 10px;
     font-family: $first-font-family;
     font-size: 14px;
