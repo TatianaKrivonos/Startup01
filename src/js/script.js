@@ -29,8 +29,8 @@ $(document).ready(function() {
   });
 
   /*активные элементы*/
-  $(".tabs__link").click(function( event ) {
-    event.preventDefault();
+  $(".tabs__link").click(function(e) {
+    e.preventDefault();
   });
 
   $(".tabs__link--all").addClass("active");
@@ -39,17 +39,6 @@ $(document).ready(function() {
     $(".tabs__link").removeClass("active");
     $(this).addClass("active");
   });
-
-  $("#slick-slide-control10").addClass("slick-dots__btn slick-dots__btn--first");
-  $("#slick-slide-control11").addClass("slick-dots__btn");
-  $("#slick-slide-control12").addClass("slick-dots__btn");
-
-  $(".slick-dots__btn--first").addClass("active");
-  $(".slick-dots__btn").on("click", function(){
-    $(".slick-dots__btn").removeClass("active");
-    $(this).addClass("active");
-  });
-
 });
 
 /*кнопка меню*/

@@ -10,18 +10,21 @@
       &:last-child {
         margin-right: 0;
       }
-    }
 
-    &__btn {
-      width: 13px;
-      height: 13px;
-      border: 0;
-      border-radius: 50%;
-      font: 0/0 a;
-      background-color: $gray-light;
+      button {
+        width: 13px;
+        height: 13px;
+        border: 0;
+        border-radius: 50%;
+        font: 0/0 a;
+        background-color: $gray-light;
+      }
 
-      &.active {
-        background-color: $main-color;
+      &.slick-active {
+
+        button {
+          background-color: $main-color;
+        }
       }
     }
   }
@@ -32,5 +35,6 @@
 
   &-slide {
     padding: 0 15px;
+    outline: 0;
   }
 }
